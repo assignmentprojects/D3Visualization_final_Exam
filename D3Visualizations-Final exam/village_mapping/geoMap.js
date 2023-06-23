@@ -67,8 +67,8 @@ d3.csv("us-pop.csv", function(data) {
             tooltip.transition()
                .duration(200)
                .style("opacity", .9);
-            tooltip.html("<strong>" + d.properties.name + "</strong>" + "<br/>" + "Population: " +
-                        (d.properties.value).toLocaleString() + " Million")			
+            tooltip.html("<strong>" + d.properties.name + "</strong>" + "<br/>" + "Longitude: " +
+                        (d.properties.value).toLocaleString() + " Degrees")			
 			   .style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");		       
         })
